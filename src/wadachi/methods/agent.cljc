@@ -19,7 +19,7 @@
   ERC-4337 + TitheRouter 10% only — no fiat (G13). Platform holds no key; operator signs
   mission dispatch + settlement (G14). Compute-only R0; mission dispatch stops at :intent
   (G15)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── constants ──────────────────────────────────────────────────────────────────
 
@@ -141,7 +141,7 @@
   (let [commands    (get state "steering-commands" (get state :steering-commands {}))
         sensor-data (get state "sensors" (get state :sensors {}))
         lidar       (get sensor-data "lidar" (get sensor-data :lidar "no_obstacle"))
-        detected    (str/includes? (str/lower-case (str lidar)) "obstacle")
+        detected    (str/includes? (str/lower (str lidar)) "obstacle")
         cmd-id      (get commands "command-id" (get commands :command-id "unknown"))
         adjustment  {"adjustment-id"    (str "aa." cmd-id ".001")
                      "obstacle-detected" detected
