@@ -4,7 +4,7 @@
  :cell/glyph "📊"
  :cell/kind :langgraph
  :cell/runtime :wasm
- :cell/entry "src/wadachi/cells/telemetry_log/state_machine.cljc"
+ :cell/entry "src/wadachi/cells/telemetry_log/state_machine.kotoba"
  :cell/handler "handle_telemetry_log"
  :cell/doc "Full mission telemetry (GPS track, sensor streams, commands) → missionCompleteRecord (IPFS CID + MST record). IPFS-pinned for audit trail (G2)."
  :cell/state-graph
