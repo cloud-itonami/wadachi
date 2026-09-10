@@ -4,7 +4,7 @@
  :cell/glyph "🎮"
  :cell/kind :langgraph
  :cell/runtime :wasm
- :cell/entry "src/wadachi/cells/motion_control/state_machine.cljc"
+ :cell/entry "src/wadachi/cells/motion_control/state_machine.kotoba"
  :cell/handler "handle_motion_control"
  :cell/doc "trajectoryPlan → steering commands (wheel angle, throttle, brake) over time. Computes control law deterministically at 10 Hz (G6)."
  :cell/state-graph

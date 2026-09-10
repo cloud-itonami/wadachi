@@ -4,7 +4,7 @@
  :cell/glyph "🗺️"
  :cell/kind :langgraph
  :cell/runtime :wasm
- :cell/entry "src/wadachi/cells/route_planning/state_machine.cljc"
+ :cell/entry "src/wadachi/cells/route_planning/state_machine.kotoba"
  :cell/handler "handle_route_planning"
  :cell/doc "member deliveryRoute → waypoint trajectory with obstacle buffer zones and speed profile (SAE L4 ceiling). Murakumo sora node executes aerial route planning."
  :cell/state-graph

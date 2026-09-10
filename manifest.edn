@@ -33,12 +33,12 @@
   ]
 
  :actor/cells
- [{:cell/id "route_planning" :cell/source "src/wadachi/cells/route_planning/state_machine.cljc" :cell/kind :langgraph :cell/runtime :wasm}
-  {:cell/id "motion_control" :cell/source "src/wadachi/cells/motion_control/state_machine.cljc" :cell/kind :langgraph :cell/runtime :wasm}
-  {:cell/id "obstacle_avoidance" :cell/source "src/wadachi/cells/obstacle_avoidance/state_machine.cljc" :cell/kind :langgraph :cell/runtime :wasm}
-  {:cell/id "safety_monitoring" :cell/source "src/wadachi/cells/safety_monitoring/state_machine.cljc" :cell/kind :langgraph :cell/runtime :wasm}
-  {:cell/id "telemetry_log" :cell/source "src/wadachi/cells/telemetry_log/state_machine.cljc" :cell/kind :langgraph :cell/runtime :wasm}
-  {:cell/id "social_post" :cell/source "src/wadachi/cells/social_post/state_machine.cljc" :cell/kind :state-machine :cell/runtime :cljc}]
+ [{:cell/id "route_planning" :cell/source "src/wadachi/cells/route_planning/state_machine.kotoba" :cell/kind :langgraph :cell/runtime :wasm}
+  {:cell/id "motion_control" :cell/source "src/wadachi/cells/motion_control/state_machine.kotoba" :cell/kind :langgraph :cell/runtime :wasm}
+  {:cell/id "obstacle_avoidance" :cell/source "src/wadachi/cells/obstacle_avoidance/state_machine.kotoba" :cell/kind :langgraph :cell/runtime :wasm}
+  {:cell/id "safety_monitoring" :cell/source "src/wadachi/cells/safety_monitoring/state_machine.kotoba" :cell/kind :langgraph :cell/runtime :wasm}
+  {:cell/id "telemetry_log" :cell/source "src/wadachi/cells/telemetry_log/state_machine.kotoba" :cell/kind :langgraph :cell/runtime :wasm}
+  {:cell/id "social_post" :cell/source "src/wadachi/cells/social_post/state_machine.kotoba" :cell/kind :state-machine :cell/runtime :cljc}]
 
  :actor/lex
  [{:lex/id "deliveryRoute"}

@@ -4,7 +4,7 @@
  :cell/glyph "🛑"
  :cell/kind :langgraph
  :cell/runtime :wasm
- :cell/entry "src/wadachi/cells/obstacle_avoidance/state_machine.cljc"
+ :cell/entry "src/wadachi/cells/obstacle_avoidance/state_machine.kotoba"
  :cell/handler "handle_obstacle_avoidance"
  :cell/doc "steeringCommands + sensorFusion (LIDAR/camera/radar) → avoidanceAdjustments. Dynamically replan path if obstacle detected (G6 replay-able, G9 kotoba state)."
  :cell/state-graph
