@@ -12,6 +12,6 @@
 - `wire/identity/` — externally served DID/profile JSON
 - `docs/adr/` — actor-owned decision record
 
-Run the suite with `bb test`.
+Run the suite with `kbb -M:test`.
 
 The actor preserves the SAE Level-4 ceiling, deterministic trajectory, witness, no-server-key, operator-gating, energy-budget, and Murakumo-only inference constraints recorded in `manifest.edn` and the ADR.

@@ -5,4 +5,4 @@
 - Keep production code under `src/wadachi/` and tests under `test/wadachi/`.
 - Do not restore monorepo-relative paths, Go/TinyGo ports, generated WASM binaries, or shell launchers.
 - Preserve the constitutional mobility gates and operator consent boundaries.
-- Run `bb test` plus the EDN and artifact audits before publishing.
+- Run `kbb -M:test` plus the EDN and artifact audits before publishing.
